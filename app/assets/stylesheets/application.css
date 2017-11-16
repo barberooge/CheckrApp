@@ -1,0 +1,561 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+/* CHECKR */
+
+html {
+    width: 100%;
+}
+
+body {
+    margin: 0;
+}
+
+.checkr {
+    font-family: 'Noto Sans', sans-serif;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.chead {
+    background-image: image-url("header.png");
+    background-repeat: no-repeat;
+    background-size: 2050px auto;
+}
+
+.chead,
+.cpartners,
+.cfonct,
+.cexamp,
+.cdetail,
+.capp,
+.ctour {
+    border-bottom: 1px solid #E5E5E6;
+}
+
+.cheader {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 10%;
+    margin-top: 1%;
+    max-height: 100%;
+}
+
+.cheadermenu {
+    margin: 0 1%;
+}
+
+.cheadermenulinks {
+    color: white;
+    font-size: 0.9em;
+    text-decoration: none;
+}
+
+.cheadermenulinks:hover {
+    opacity: 0.5;
+    -moz-transition: all 0.2s ease-out;
+    /* FF4+ */
+    -o-transition: all 0.2s ease-out;
+    /* Opera 10.5+ */
+    -webkit-transition: all 0.2s ease-out;
+    /* Saf3.2+, Chrome */
+    -ms-transition: all 0.2s ease-out;
+    /* IE10? */
+    transition: all 0.2s ease-out;
+}
+
+.cmenu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    margin-top: 25px;
+}
+
+.cmenuleft {
+    display: flex;
+    justify-content: flex-start;
+    width: 50%;
+    padding-left: 5%;
+
+}
+
+.cmenulogo {
+    width: 150px;
+    margin-right: 2%;
+}
+
+.checkrimg {
+    width: 100%;
+    min-width: 150px;
+}
+
+.cmenudd {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 3%;
+}
+
+.dropdown {
+    display: inline-block;
+    align-items: center;
+    position: relative;
+}
+
+.dropbtn {
+    color: white;
+    font-weight: bold;
+    font-size: 0.9em;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    font-size: 0.9em;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.industries {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    font-size: 0.9em;
+    min-width: 350px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-content a,
+.industries a {
+    color: #071950;
+    padding: 1em 1.2em;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover,
+.industries a:hover {
+    color: #1975C5;
+    -moz-transition: all 0.2s ease-out;
+    /* FF4+ */
+    -o-transition: all 0.2s ease-out;
+    /* Opera 10.5+ */
+    -webkit-transition: all 0.2s ease-out;
+    /* Saf3.2+, Chrome */
+    -ms-transition: all 0.2s ease-out;
+    /* IE10? */
+    transition: all 0.2s ease-out;
+}
+
+.dropdown:hover .dropdown-content,
+.dropdown:hover .industries {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-height: 300px;
+    margin-top: 10px;
+    -moz-transition: all 0.2s ease-out;
+    /* FF4+ */
+    -o-transition: all 0.2s ease-out;
+    /* Opera 10.5+ */
+    -webkit-transition: all 0.2s ease-out;
+    /* Saf3.2+, Chrome */
+    -ms-transition: all 0.2s ease-out;
+    /* IE10? */
+    transition: all 0.2s ease-out;
+}
+
+.dropdown:hover .dropbtn {
+    opacity: 0.5;
+    -moz-transition: all 0.2s ease-out;
+    /* FF4+ */
+    -o-transition: all 0.2s ease-out;
+    /* Opera 10.5+ */
+    -webkit-transition: all 0.2s ease-out;
+    /* Saf3.2+, Chrome */
+    -ms-transition: all 0.2s ease-out;
+    /* IE10? */
+    transition: all 0.2s ease-out;
+}
+
+.cmenuright {
+    display: flex;
+    justify-content: flex-end;
+    width: 50%;
+    padding-right: 5%;
+
+}
+
+.cmenuloginlink {
+    font-weight: bold;
+    font-size: 0.9em;
+    color: white;
+    text-decoration: none;
+}
+
+.cmenulogin {
+    margin: 0 3em;
+}
+
+.cmenulogin:hover {
+    opacity: 0.5;
+    -moz-transition: all 0.2s ease-out;
+    /* FF4+ */
+    -o-transition: all 0.2s ease-out;
+    /* Opera 10.5+ */
+    -webkit-transition: all 0.2s ease-out;
+    /* Saf3.2+, Chrome */
+    -ms-transition: all 0.2s ease-out;
+    /* IE10? */
+    transition: all 0.2s ease-out;
+}
+
+.cmenustartedlink {
+    font-weight: bold;
+    font-size: 0.9em;
+    color: #D5B62D;
+    text-decoration: none;
+}
+
+.cmenustartedlink:hover {
+    color: #3F5671;
+    -moz-transition: all 0.2s ease-out;
+    /* FF4+ */
+    -o-transition: all 0.2s ease-out;
+    /* Opera 10.5+ */
+    -webkit-transition: all 0.2s ease-out;
+    /* Saf3.2+, Chrome */
+    -ms-transition: all 0.2s ease-out;
+    /* IE10? */
+    transition: all 0.2s ease-out;
+}
+
+.cmenustarted {
+    border: 2px solid #D5B62D;
+    border-radius: 3px;
+    padding: 1em 2em;
+}
+
+.cmenustarted:hover {
+    background-color: #D5B62D;
+    -moz-transition: all 0.2s ease-out;
+    /* FF4+ */
+    -o-transition: all 0.2s ease-out;
+    /* Opera 10.5+ */
+    -webkit-transition: all 0.2s ease-out;
+    /* Saf3.2+, Chrome */
+    -ms-transition: all 0.2s ease-out;
+    /* IE10? */
+    transition: all 0.2s ease-out;
+}
+
+.cfirst {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 35px 0 -6px 0;
+}
+
+.cfirstexplore {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 5%;
+}
+
+.cfirstgif {
+    width: 50%;
+}
+
+.cfirstexploretitle {
+    margin-top: 20px;
+}
+
+.cfirstexploretitletxt {
+    color: white;
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+.cfirstexploretext {
+    width: 80%;
+    margin-bottom: 10%;
+}
+
+.cfirstexploretexttxt {
+    color: white;
+    opacity: 0.9;
+}
+
+.cfirstexplorebuttonlink {
+    color: #3F5671;
+    font-weight: bold;
+    font-size: 0.9em;
+    text-decoration: none;
+}
+
+.cfirstexplorebutton {
+    background-color: #D5B62D;
+    padding: 1.2em 2.1em;
+    border: 2px solid #D5B62D;
+    border-radius: 3px;
+}
+
+.cfirstexplorebutton:hover {
+    opacity: 0.9;
+    -moz-transition: all 0.2s ease-out;
+    /* FF4+ */
+    -o-transition: all 0.2s ease-out;
+    /* Opera 10.5+ */
+    -webkit-transition: all 0.2s ease-out;
+    /* Saf3.2+, Chrome */
+    -ms-transition: all 0.2s ease-out;
+    /* IE10? */
+    transition: all 0.2s ease-out;
+}
+
+.cpartners,
+.cexamp,
+.capp {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.cpartnerstitle,
+.cfonctitle,
+.cexampletitle,
+.cdetailtitle,
+.capptitle {
+    width: 100%;
+    text-align: center;
+    margin: 50px 0;
+}
+
+.cpartnerstitletxt,
+.cfonctitletxt,
+.cexampletitletxt,
+.cdetailtitletxt,
+.capptitletxt {
+    color: #21343F;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.cpartnersall {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin-bottom: 20px;
+    ;
+}
+
+.cpartnerslogo {
+    width: 20%;
+}
+
+.cpartnerslogoimg {
+    width: 100%;
+}
+
+.cfonct {
+    background-color: #F5F9FB;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    padding-bottom: 50px;
+}
+
+.cfonct3,
+.cfonct2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.cfonct3 {
+    margin-bottom: 25px;
+}
+
+.cfonctall {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 25%;
+    margin: 0 10px;
+}
+
+.cfonctallimg {
+    height: 50px;
+}
+
+.cfonctalltitle {
+    color: #21323E;
+    font-weight: bold;
+}
+
+.cfonctalltxt {
+    color: #91908E;
+    font-size: 0.9em;
+}
+
+.cdetail {
+    background-color: #F5F9FB;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 50px;
+}
+
+.cdetailf {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+}
+
+
+.cdetailfor {
+    display: flex;
+    flex-direction: column;
+    margin: 5px 20px;
+    width: 33%;
+    padding: 50px;
+    background-color: white;
+    border: 1px solid #E5E5E6;
+}
+
+#cdetailfor1 {
+    border-bottom: 4px solid #376DA7;
+}
+
+#cdetailfor2 {
+    border-bottom: 4px solid #62B48D;
+}
+
+#cdetailfor3 {
+    border-bottom: 4px solid #CDB733;
+}
+
+.cdetailfortitle,
+.cappfirsttitle,
+.capplastusertitle {
+    margin-left: 15px;
+    vertical-align: super;
+    color: #21323E;
+    font-weight: bold,
+}
+
+.lifirst {
+    color: #808080;
+    font-size: 0.9em;
+    font-weight: 700;
+    padding-bottom: 5px;
+}
+
+.cdetaillinky,
+.cappfirstlink {
+    color: #3C77B5;
+    font-weight: bold;
+    font-size: 0.9em;
+    letter-spacing: 2px;
+    text-decoration: none;
+}
+
+.cdetaillinky:hover,
+.cappfirstlink:hover {
+    opacity: 0.7;
+}
+
+.cdetailforlinks {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.cdetailforlink {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.cdetailforarrow {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.cappcol1 {
+    margin: 50px 0;
+}
+
+.cappcol2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
+    width: 100%;
+}
+
+.cappfirst,
+.capplast {
+    width: 40%;
+}
+
+.cappfirstlink {
+    margin-left: 15px;
+}
+
+.capplastcitetxt {
+    color: #808080;
+    text-align: justify;
+    font-size: 1.3em;
+    font-family: 'Noto Serif', serif;
+}
+
+.userimg {
+    width: 50px;
+    height: 50px;
+}
+
+.capplastuser {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.capplastusertxt {
+    margin: 0 15px;
+    color: #808080;
+    font-size: 0.9em;
+    font-weight: 700;
+}
+
+.capp {
+    padding-bottom: 50px;
+}
