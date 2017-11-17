@@ -26,7 +26,7 @@ body {
 }
 
 .checkr {
-    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Noto Sans', sans-serif !important;
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -534,7 +534,7 @@ body {
     color: #808080;
     text-align: justify;
     font-size: 1.3em;
-    font-family: 'Noto Serif', serif;
+    font-family: 'Noto Serif', serif !important;
 }
 
 .userimg {
