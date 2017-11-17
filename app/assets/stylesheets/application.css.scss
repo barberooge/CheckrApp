@@ -288,7 +288,8 @@ body {
     margin-top: 20px;
 }
 
-.cfirstexploretitletxt {
+.cfirstexploretitletxt,
+.ctourtxttitle {
     color: white;
     font-size: 2.5em;
     font-weight: bold;
@@ -555,4 +556,148 @@ body {
 
 .capp {
     padding-bottom: 50px;
+}
+
+.ctour {
+    background-image: image-url("section.png");
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.ctourimg {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 33%;
+    height: 300px;
+    margin: auto 0 -28px 50px;
+}
+
+.ctourimgimg {
+    height: 250px;
+    width: 320px;
+}
+
+.ctourtxt,
+.ctourbuttons {
+    width: 33%;
+}
+
+.ctourbuttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-right: 100px;
+}
+.ctourtxttxt {
+    color: white;
+    font-size: 1.2em;
+}
+
+
+.ctourbuttonlink {
+    color: white;
+    font-weight: bold;
+    font-size: 0.9em;
+    letter-spacing: 2px;
+    text-decoration: none;
+}
+
+.ctourbutton {
+    background-color: #112532;
+    padding: 1.3em 2.3em;
+    border: 2px solid #112532;
+    border-radius: 7px;
+}
+
+.cfooter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #112532;
+    padding-top: 100px;
+}
+
+.cfooterstart {
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    align-items: baseline;
+    width: 90%;
+    margin-bottom: 150px;
+}
+
+.cfooterfoot {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-bottom: 30px;
+}
+
+.cfooterlisttitle {
+    margin-left: 40px;
+    color: #3C77B5;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-size: 0.9em;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #90A1B1;
+}
+
+.cfooterlistdeco {
+    list-style: none;
+    cursor: pointer;
+    color: white;
+    line-height: 2.7em;
+    font-size: 0.9em;
+}
+
+.mailto {
+    text-decoration: none;
+    color: white;
+}
+
+.cfooterlarge {
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    max-height: 200px;
+}
+
+.cfooterlisting {
+    display: flex;
+    flex-direction: row;
+}
+
+.cfooterlist {
+    width: 16%;
+}
+
+.socialmediaimg {
+    width: 15px;
+    height: 15px;
+    margin: 5px 2px;
+}
+
+.cfooterfootlinks {
+    width: 30%;
+}
+
+.napbs {
+    height: 100px;
+}
+
+.cfooterlink {
+    color: #3C77B5;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-size: 0.9em;
+}
+
+.cfooterlinkseparator {
+    margin: 10px 0;
+    color: #3C77B5;
 }
